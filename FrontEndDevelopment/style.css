@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: aliceblue;
+    text-transform: uppercase;
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 70px;
+}
+.logo{
+    text-align: center;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    font-size:30px;
+}
+nav a{
+    margin: 0 15px;
+    transition: color .4s ease;
+}
+nav a:hover{
+    color: crimson;
+}
+.banner{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: url(image/bg3.png);
+    
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+.banner .content h4{
+    color: rgb(255, 255, 255);
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    font-size: 25px;
+    font-weight: 300;
+    text-shadow: 3px;
+    text-shadow:2px 2px rgb(23, 24, 2) ;
+    
+}
+.banner .content h1{
+    font-size: 6rem;
+    font-weight: 400;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin: 2rem 0;
+    letter-spacing: 2px;
+    text-shadow:2px 2px rgb(23, 24, 2) ;
+}
+.btn{
+    padding: 15px 30px;
+    border-radius: 50px;
+    background: rgb(148, 5, 5);
+    margin-right: 10px;
+    margin-left: 20px;
+    
+    transition: opacity .4s ease;
+}
+.btn:hover{
+    opacity: .6;
+    zoom: 110%;
+    transition: opacity .4s ease;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+ 
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: var(--primary);
+    border-radius: 5rem;
+}
+
+section.features{
+    padding: 5rem 7%;
+    background: url(image/bg1.jpg);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+   
+}
+.features .box-container{
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr));
+    gap: 8rem;
+    padding: 8rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top:5% ;
+}
+
+
+
+.features .box-container .box h3{
+    font-size: 6rem;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-shadow: 5px 5px black;
+    color: #ffff00;
+    
+}
+
+.features .box-container .box h3:hover{
+   zoom: 110%;
+    color: #ff0000;
+    transition: .6 ease ;
+    
+}
+.features .box-container .box p{
+    font-size: 2rem;
+    padding: 1rem 0;
+    color: #ffffff;
+    line-height: 1.5;
+    text-shadow: 2px 2px black;
+}
+
+.register{          
+    background: url(image/register.jpg) no-repeat;
+    background-size: cover;
+    text-align: center;
+    padding: 5rem 7%;
+   
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.register form{
+    width: 70%;
+    margin: 0 auto;
+    background: var(--white);
+    border-radius: 1rem;
+    padding: 2rem;
+}
+
+.register form .inputBox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 1rem;
+}
+
+.register form .inputBox input,textarea{
+    height: 4rem;
+    width: 49%;
+    background: #eee;
+    color: var(--primary);
+    padding: 0 1rem;
+    margin: 1rem 0;
+    border-radius: 1rem;
+    font-size: 2rem;
+}
+
+.register form textarea{
+    height: 20rem;
+    resize: none;
+    width: 100%;
+    padding: 1rem;
+}
+
+.register form .inputBox input:focus,textarea:focus{
+    border: .1rem solid var(--primary);
+}
+section.register h1{
+    font-size: 50px;
+    color: #000;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+
+
+
+.footer{
+    background-color: #674949;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 1.5rem;
+    padding-left: 30px;
+   
+}
+
+.footer .box-container .box h3{
+    font-size: 2.2rem;
+    color: white;
+    padding: 1rem 0;
+}
+
+
+.footer .box-container .box a{
+    display: block;
+    font-size: 1.4rem;
+    color:white;
+    padding: 1rem 0;
+    margin-left: 20px;
+}
+
+
+.footer .box-container .box a:hover{
+    color: white;
+}
+
+.footer .credit{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    margin-top: 2.5rem;
+    padding: 1rem;
+    padding-top: 2rem;
+    text-align: center;
+    border-top: .1rem solid #ffffff;
+    color: white;
+}
+.credit {
+    background-color: #000;
+}
+
